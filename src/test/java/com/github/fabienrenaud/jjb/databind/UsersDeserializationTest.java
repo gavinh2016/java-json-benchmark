@@ -21,9 +21,4 @@ public class UsersDeserializationTest extends JsonBenchmarkUsersTest {
     }
 
 
-    @Override
-    public void boon() throws Exception {
-        // FIXME: null collection
-    }
-
 }

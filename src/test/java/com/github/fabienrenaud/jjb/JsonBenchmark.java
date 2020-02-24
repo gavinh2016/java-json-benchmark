@@ -86,164 +86,164 @@ public abstract class JsonBenchmark<T> {
         }
     }
 
-    @Test
-    public void orgjson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.ORGJSON, BENCH.orgjson());
-        }
-    }
-
-    @Test
-    public void genson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.GENSON, BENCH.genson());
-        }
-    }
-
-    @Test
-    public void yasson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.YASSON, BENCH.yasson());
-        }
-    }
-
-    @Test
-    public void javaxjson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.JAVAXJSON, BENCH.javaxjson());
-        }
-    }
-
-    @Test
-    public void flexjson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.FLEXJSON, BENCH.flexjson());
-        }
-    }
-
+//    @Test
+//    public void orgjson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.ORGJSON, BENCH.orgjson());
+//        }
+//    }
+//
+//    @Test
+//    public void genson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.GENSON, BENCH.genson());
+//        }
+//    }
+//
+//    @Test
+//    public void yasson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.YASSON, BENCH.yasson());
+//        }
+//    }
+//
+//    @Test
+//    public void javaxjson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.JAVAXJSON, BENCH.javaxjson());
+//        }
+//    }
+//
+//    @Test
+//    public void flexjson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.FLEXJSON, BENCH.flexjson());
+//        }
+//    }
+//
     @Test
     public void fastjson() throws Exception {
         for (int i = 0; i < ITERATIONS; i++) {
             test(Library.FASTJSON, BENCH.fastjson());
         }
     }
-
-    @Test
-    public void jsonio() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.JSONIO, BENCH.jsonio());
-        }
-    }
-
-    @Test
-    public void boon() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.BOON, BENCH.boon());
-        }
-    }
-
-    @Test
-    public void johnzon() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.JOHNZON, BENCH.johnzon());
-        }
-    }
-
-    @Test
-    public void jsonsmart() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.JSONSMART, BENCH.jsonsmart());
-        }
-    }
-
-    @Test
-    public void dsljson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.DSLJSON, BENCH.dsljson());
-        }
-    }
-
-    @Test
-    public void dsljson_reflection() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.DSLJSON_REFLECTION, BENCH.dsljson_reflection());
-        }
-    }
-
-    @Test
-    public void logansquare() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.LOGANSQUARE, BENCH.logansquare());
-        }
-    }
-
-    @Test
-    public void jsonsimple() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.JSONSIMPLE, BENCH.jsonsimple());
-        }
-    }
-
-    @Test
-    public void nanojson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.NANOJSON, BENCH.nanojson());
-        }
-    }
-
-    @Test
-    public void jodd() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.JODD, BENCH.jodd());
-        }
-    }
-
-    @Test
-    public void moshi() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.MOSHI, BENCH.moshi());
-        }
-    }
-
-    @Test
-    public void tapestry() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.TAPESTRY, BENCH.tapestry());
-        }
-    }
-
-    @Test
-    public void jsoniter() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.JSONITER, BENCH.jsoniter());
-        }
-    }
-
-    @Test
-    public void minimaljson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.MINIMALJSON, BENCH.minimaljson());
-        }
-    }
-
-    @Test
-    public void mjson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.MJSON, BENCH.mjson());
-        }
-    }
-
-    @Test
-    public void underscore_java() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.UNDERSCORE_JAVA, BENCH.underscore_java());
-        }
-    }
-    
-    @Test
-    public void purejson() throws Exception {
-        for (int i = 0; i < ITERATIONS; i++) {
-            test(Library.PUREJSON, BENCH.underscore_java());
-        }
-    }
+//
+//    @Test
+//    public void jsonio() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.JSONIO, BENCH.jsonio());
+//        }
+//    }
+//
+//    @Test
+//    public void boon() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.BOON, BENCH.boon());
+//        }
+//    }
+//
+//    @Test
+//    public void johnzon() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.JOHNZON, BENCH.johnzon());
+//        }
+//    }
+//
+//    @Test
+//    public void jsonsmart() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.JSONSMART, BENCH.jsonsmart());
+//        }
+//    }
+//
+//    @Test
+//    public void dsljson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.DSLJSON, BENCH.dsljson());
+//        }
+//    }
+//
+//    @Test
+//    public void dsljson_reflection() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.DSLJSON_REFLECTION, BENCH.dsljson_reflection());
+//        }
+//    }
+//
+//    @Test
+//    public void logansquare() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.LOGANSQUARE, BENCH.logansquare());
+//        }
+//    }
+//
+//    @Test
+//    public void jsonsimple() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.JSONSIMPLE, BENCH.jsonsimple());
+//        }
+//    }
+//
+//    @Test
+//    public void nanojson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.NANOJSON, BENCH.nanojson());
+//        }
+//    }
+//
+//    @Test
+//    public void jodd() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.JODD, BENCH.jodd());
+//        }
+//    }
+//
+//    @Test
+//    public void moshi() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.MOSHI, BENCH.moshi());
+//        }
+//    }
+//
+//    @Test
+//    public void tapestry() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.TAPESTRY, BENCH.tapestry());
+//        }
+//    }
+//
+//    @Test
+//    public void jsoniter() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.JSONITER, BENCH.jsoniter());
+//        }
+//    }
+//
+//    @Test
+//    public void minimaljson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.MINIMALJSON, BENCH.minimaljson());
+//        }
+//    }
+//
+//    @Test
+//    public void mjson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.MJSON, BENCH.mjson());
+//        }
+//    }
+//
+//    @Test
+//    public void underscore_java() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.UNDERSCORE_JAVA, BENCH.underscore_java());
+//        }
+//    }
+//
+//    @Test
+//    public void purejson() throws Exception {
+//        for (int i = 0; i < ITERATIONS; i++) {
+//            test(Library.PUREJSON, BENCH.underscore_java());
+//        }
+//    }
 }

@@ -51,10 +51,10 @@ The results here-below were computed on April the 8th, 2018 with the following l
 
 | Library      | Version  |
 |--------------|----------|
-| jackson      | 2.9.5    |
+| jackson      | 2.10.1    |
 | genson       | 1.4      |
-| fastjson     | 1.2.47   |
-| gson         | 2.8.2    |
+| fastjson     | 1.2.62  |
+| gson         | 2.8.6    |
 | org.json     | 20090211 |
 | javax-json   | 1.1.2    |
 | json-io      | 4.10.0   |

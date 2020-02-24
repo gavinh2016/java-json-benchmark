@@ -11,28 +11,7 @@ public enum Library {
     GSON,
     JACKSON,
     JACKSON_AFTERBURNER,
-    ORGJSON,
-    YASSON,
-    GENSON, JAVAXJSON,
-    FLEXJSON,
-    FASTJSON,
-    JSONIO,
-    BOON,
-    JOHNZON,
-    JSONSMART,
-    DSLJSON,
-    DSLJSON_REFLECTION,
-    LOGANSQUARE,
-    JSONSIMPLE,
-    NANOJSON,
-    JODD,
-    MOSHI,
-    TAPESTRY,
-    JSONITER,
-    MINIMALJSON,
-    MJSON,
-    UNDERSCORE_JAVA,
-    PUREJSON;
+    FASTJSON;
 
     public static Set<Library> fromCsv(String str) {
         if (str == null || str.trim().isEmpty()) {

@@ -17,28 +17,4 @@ public class ClientsDeserializationTest extends JsonBenchmarkClientsTest {
         }, Api.DATABIND);
     }
 
-    @Override
-    public void yasson() throws Exception {
-        // FIXME: yasson fails on UUID
-    }
-
-    @Override
-    public void boon() throws Exception {
-        // FIXME: does not support LocalDate
-    }
-
-    @Override
-    public void genson() throws Exception {
-        // FIXME: does not support BigDecimal correctly
-    }
-
-    @Override
-    public void jsonsmart() throws Exception {
-        // FIXME: null error
-    }
-
-    @Override
-    public void johnzon() throws Exception {
-        // FIXME: does not work
-    }
 }
