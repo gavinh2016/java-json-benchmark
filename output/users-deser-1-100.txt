@@ -1,0 +1,237 @@
+# JMH version: 1.23
+# VM version: JDK 1.8.0_211, Java HotSpot(TM) 64-Bit Server VM, 25.211-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.fabienrenaud.jjb.databind.Deserialization.fastjson
+
+# Run progress: 0.00% complete, ETA 00:10:40
+# Fork: 1 of 2
+# Warmup Iteration   1: Using SEED=7607 as seed for Random
+5836.051 ops/s
+# Warmup Iteration   2: 6092.556 ops/s
+# Warmup Iteration   3: 6141.709 ops/s
+# Warmup Iteration   4: 6170.016 ops/s
+# Warmup Iteration   5: 6067.686 ops/s
+Iteration   1: 6144.862 ops/s
+Iteration   2: 6116.193 ops/s
+Iteration   3: 6174.668 ops/s
+Iteration   4: 6065.974 ops/s
+Iteration   5: 6195.933 ops/s
+Iteration   6: 6120.307 ops/s
+Iteration   7: 6152.025 ops/s
+Iteration   8: 6101.703 ops/s
+Iteration   9: 6141.687 ops/s
+Iteration  10: 6126.162 ops/s
+
+# Run progress: 12.50% complete, ETA 00:09:32
+# Fork: 2 of 2
+# Warmup Iteration   1: Using SEED=7607 as seed for Random
+5733.852 ops/s
+# Warmup Iteration   2: 6174.681 ops/s
+# Warmup Iteration   3: 6061.715 ops/s
+# Warmup Iteration   4: 6092.632 ops/s
+# Warmup Iteration   5: 6097.378 ops/s
+Iteration   1: 6112.277 ops/s
+Iteration   2: 6131.143 ops/s
+Iteration   3: 6139.879 ops/s
+Iteration   4: 6111.533 ops/s
+Iteration   5: 6154.860 ops/s
+Iteration   6: 6124.569 ops/s
+Iteration   7: 6006.980 ops/s
+Iteration   8: 6146.562 ops/s
+Iteration   9: 6066.920 ops/s
+Iteration  10: 6090.711 ops/s
+
+
+Result "com.github.fabienrenaud.jjb.databind.Deserialization.fastjson":
+  6121.247 ±(99.9%) 36.290 ops/s [Average]
+  (min, avg, max) = (6006.980, 6121.247, 6195.933), stdev = 41.792
+  CI (99.9%): [6084.957, 6157.538] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 1.8.0_211, Java HotSpot(TM) 64-Bit Server VM, 25.211-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.fabienrenaud.jjb.databind.Deserialization.gson
+
+# Run progress: 25.00% complete, ETA 00:08:10
+# Fork: 1 of 2
+# Warmup Iteration   1: Using SEED=7607 as seed for Random
+6112.445 ops/s
+# Warmup Iteration   2: 6454.849 ops/s
+# Warmup Iteration   3: 6404.112 ops/s
+# Warmup Iteration   4: 6444.679 ops/s
+# Warmup Iteration   5: 6400.657 ops/s
+Iteration   1: 6392.138 ops/s
+Iteration   2: 6469.708 ops/s
+Iteration   3: 6369.450 ops/s
+Iteration   4: 6356.966 ops/s
+Iteration   5: 6425.825 ops/s
+Iteration   6: 6427.708 ops/s
+Iteration   7: 6384.044 ops/s
+Iteration   8: 6365.870 ops/s
+Iteration   9: 6463.589 ops/s
+Iteration  10: 6304.397 ops/s
+
+# Run progress: 37.50% complete, ETA 00:06:48
+# Fork: 2 of 2
+# Warmup Iteration   1: Using SEED=7607 as seed for Random
+6023.336 ops/s
+# Warmup Iteration   2: 6243.713 ops/s
+# Warmup Iteration   3: 6281.827 ops/s
+# Warmup Iteration   4: 6277.323 ops/s
+# Warmup Iteration   5: 6259.834 ops/s
+Iteration   1: 6179.695 ops/s
+Iteration   2: 6312.240 ops/s
+Iteration   3: 6270.735 ops/s
+Iteration   4: 6360.925 ops/s
+Iteration   5: 6311.946 ops/s
+Iteration   6: 6279.294 ops/s
+Iteration   7: 6291.072 ops/s
+Iteration   8: 6248.221 ops/s
+Iteration   9: 6259.649 ops/s
+Iteration  10: 6275.246 ops/s
+
+
+Result "com.github.fabienrenaud.jjb.databind.Deserialization.gson":
+  6337.436 ±(99.9%) 66.794 ops/s [Average]
+  (min, avg, max) = (6179.695, 6337.436, 6469.708), stdev = 76.920
+  CI (99.9%): [6270.642, 6404.230] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 1.8.0_211, Java HotSpot(TM) 64-Bit Server VM, 25.211-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.fabienrenaud.jjb.databind.Deserialization.jackson
+
+# Run progress: 50.00% complete, ETA 00:05:26
+# Fork: 1 of 2
+# Warmup Iteration   1: Using SEED=7607 as seed for Random
+8826.630 ops/s
+# Warmup Iteration   2: 9106.719 ops/s
+# Warmup Iteration   3: 9132.213 ops/s
+# Warmup Iteration   4: 9153.827 ops/s
+# Warmup Iteration   5: 9166.597 ops/s
+Iteration   1: 9147.346 ops/s
+Iteration   2: 9186.909 ops/s
+Iteration   3: 9122.419 ops/s
+Iteration   4: 9168.334 ops/s
+Iteration   5: 9119.466 ops/s
+Iteration   6: 8939.899 ops/s
+Iteration   7: 9188.370 ops/s
+Iteration   8: 9112.328 ops/s
+Iteration   9: 9163.409 ops/s
+Iteration  10: 9122.704 ops/s
+
+# Run progress: 62.50% complete, ETA 00:04:05
+# Fork: 2 of 2
+# Warmup Iteration   1: Using SEED=7607 as seed for Random
+8341.993 ops/s
+# Warmup Iteration   2: 8844.593 ops/s
+# Warmup Iteration   3: 8831.736 ops/s
+# Warmup Iteration   4: 8905.281 ops/s
+# Warmup Iteration   5: 8928.705 ops/s
+Iteration   1: 8915.627 ops/s
+Iteration   2: 8954.346 ops/s
+Iteration   3: 8951.958 ops/s
+Iteration   4: 8792.273 ops/s
+Iteration   5: 8940.111 ops/s
+Iteration   6: 8891.126 ops/s
+Iteration   7: 8873.701 ops/s
+Iteration   8: 8870.653 ops/s
+Iteration   9: 8987.313 ops/s
+Iteration  10: 8876.818 ops/s
+
+
+Result "com.github.fabienrenaud.jjb.databind.Deserialization.jackson":
+  9016.256 ±(99.9%) 112.789 ops/s [Average]
+  (min, avg, max) = (8792.273, 9016.256, 9188.370), stdev = 129.888
+  CI (99.9%): [8903.467, 9129.044] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 1.8.0_211, Java HotSpot(TM) 64-Bit Server VM, 25.211-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/bin/java
+# VM options: -XX:+AggressiveOpts -Xms2g -Xmx2g
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.fabienrenaud.jjb.databind.Deserialization.jackson_afterburner
+
+# Run progress: 75.00% complete, ETA 00:02:43
+# Fork: 1 of 2
+# Warmup Iteration   1: Using SEED=7607 as seed for Random
+9542.683 ops/s
+# Warmup Iteration   2: 9622.935 ops/s
+# Warmup Iteration   3: 9616.081 ops/s
+# Warmup Iteration   4: 9640.808 ops/s
+# Warmup Iteration   5: 9604.569 ops/s
+Iteration   1: 9619.232 ops/s
+Iteration   2: 9756.784 ops/s
+Iteration   3: 9686.821 ops/s
+Iteration   4: 9754.770 ops/s
+Iteration   5: 9674.096 ops/s
+Iteration   6: 9661.951 ops/s
+Iteration   7: 9655.892 ops/s
+Iteration   8: 9564.352 ops/s
+Iteration   9: 9710.773 ops/s
+Iteration  10: 9503.928 ops/s
+
+# Run progress: 87.50% complete, ETA 00:01:21
+# Fork: 2 of 2
+# Warmup Iteration   1: Using SEED=7607 as seed for Random
+9316.435 ops/s
+# Warmup Iteration   2: 9588.005 ops/s
+# Warmup Iteration   3: 9632.285 ops/s
+# Warmup Iteration   4: 9610.027 ops/s
+# Warmup Iteration   5: 9637.638 ops/s
+Iteration   1: 9728.354 ops/s
+Iteration   2: 9501.620 ops/s
+Iteration   3: 9606.236 ops/s
+Iteration   4: 9505.601 ops/s
+Iteration   5: 9582.171 ops/s
+Iteration   6: 9545.295 ops/s
+Iteration   7: 9677.763 ops/s
+Iteration   8: 9622.231 ops/s
+Iteration   9: 9595.415 ops/s
+Iteration  10: 9708.198 ops/s
+
+
+Result "com.github.fabienrenaud.jjb.databind.Deserialization.jackson_afterburner":
+  9633.074 ±(99.9%) 70.846 ops/s [Average]
+  (min, avg, max) = (9501.620, 9633.074, 9756.784), stdev = 81.587
+  CI (99.9%): [9562.228, 9703.920] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:10:52
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                             Mode  Cnt     Score     Error  Units
+Deserialization.fastjson             thrpt   20  6121.247 ±  36.290  ops/s
+Deserialization.gson                 thrpt   20  6337.436 ±  66.794  ops/s
+Deserialization.jackson              thrpt   20  9016.256 ± 112.789  ops/s
+Deserialization.jackson_afterburner  thrpt   20  9633.074 ±  70.846  ops/s
