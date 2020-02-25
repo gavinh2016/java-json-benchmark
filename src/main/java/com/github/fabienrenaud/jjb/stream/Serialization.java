@@ -1,5 +1,6 @@
 package com.github.fabienrenaud.jjb.stream;
 
+import com.alibaba.fastjson.JSONWriter;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
@@ -44,6 +45,18 @@ public class Serialization extends JsonBench {
     Writer w = new OutputStreamWriter(baos);
     try (com.google.gson.stream.JsonWriter jw = new com.google.gson.stream.JsonWriter(w)) {
       JSON_SOURCE().streamSerializer().gson(jw, JSON_SOURCE().nextPojo());
+    }
+    w.close();
+    return baos;
+  }
+
+  @Benchmark
+  @Override
+  public Object fastjson() throws Exception {
+    ByteArrayOutputStream baos = JsonUtils.byteArrayOutputStream();
+    Writer w = new OutputStreamWriter(baos);
+    try (JSONWriter jw = new JSONWriter(w)) {
+      JSON_SOURCE().streamSerializer().fastjson(jw, JSON_SOURCE().nextPojo());
     }
     w.close();
     return baos;

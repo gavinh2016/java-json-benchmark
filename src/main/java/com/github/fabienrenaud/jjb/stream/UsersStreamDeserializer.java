@@ -1,5 +1,6 @@
 package com.github.fabienrenaud.jjb.stream;
 
+import com.alibaba.fastjson.JSONReader;
 import com.fasterxml.jackson.core.JsonParser;
 import com.github.fabienrenaud.jjb.model.Users;
 import com.github.fabienrenaud.jjb.model.Users.Friend;
@@ -723,6 +724,18 @@ public class UsersStreamDeserializer implements StreamDeserializer<Users> {
                 uc.users.add(underscore_java((java.util.Map<String, Object>) vi));
             }
         }
+        return uc;
+    }
+
+    @Override
+    public Users fastJson(JSONReader reader) throws IOException {
+        reader.startArray();
+       Users uc = new Users();
+        while(reader.hasNext()) {
+            uc.users.add(reader.readObject(User.class));
+        }
+        reader.endArray();
+        reader.close();
         return uc;
     }
 

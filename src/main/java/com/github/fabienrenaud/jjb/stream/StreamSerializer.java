@@ -1,5 +1,6 @@
 package com.github.fabienrenaud.jjb.stream;
 
+import com.alibaba.fastjson.JSONWriter;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.google.gson.stream.JsonWriter;
 import com.grack.nanojson.JsonAppendableWriter;
@@ -13,29 +14,31 @@ import java.io.IOException;
 
 public interface StreamSerializer<T> {
 
-    org.json.JSONObject orgjson(final T obj) throws JSONException;
+  org.json.JSONObject orgjson(final T obj) throws JSONException;
 
-    javax.json.JsonObject javaxjson(final T obj) throws IOException;
+  javax.json.JsonObject javaxjson(final T obj) throws IOException;
 
-    void genson(final ObjectWriter j, final T obj) throws IOException;
+  void genson(final ObjectWriter j, final T obj) throws IOException;
 
-    void gson(final JsonWriter j, final T obj) throws IOException;
+  void gson(final JsonWriter j, final T obj) throws IOException;
 
-    void jackson(final JsonGenerator j, final T obj) throws IOException;
+  void jackson(final JsonGenerator j, final T obj) throws IOException;
 
-    org.json.simple.JSONObject jsonsimple(final T obj) throws IOException;
+  org.json.simple.JSONObject jsonsimple(final T obj) throws IOException;
 
-    void nanojson(final JsonAppendableWriter writer, final T obj) throws IOException;
+  void nanojson(final JsonAppendableWriter writer, final T obj) throws IOException;
 
-    org.apache.tapestry5.json.JSONObject tapestry(final T obj) throws IOException;
+  org.apache.tapestry5.json.JSONObject tapestry(final T obj) throws IOException;
 
-    com.eclipsesource.json.JsonValue minimaljson(final T obj) throws IOException;
+  com.eclipsesource.json.JsonValue minimaljson(final T obj) throws IOException;
 
-    void moshi(com.squareup.moshi.JsonWriter writer, T obj) throws IOException;
+  void moshi(com.squareup.moshi.JsonWriter writer, T obj) throws IOException;
 
-    mjson.Json mjson(final T obj) throws IOException;
+  mjson.Json mjson(final T obj) throws IOException;
 
-    Object underscore_java(final T obj) throws IOException;
-    
-    Value purejson(final T obj) throws IOException;
+  Object underscore_java(final T obj) throws IOException;
+
+  Value purejson(final T obj) throws IOException;
+
+  void fastjson(JSONWriter jsonWriter, final T obj) throws IOException;
 }

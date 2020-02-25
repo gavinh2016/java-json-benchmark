@@ -8,8 +8,7 @@ import java.util.Set;
  * Created by frenaud on 7/24/16.
  */
 public enum Api {
-    DATABIND,
-    STREAM;
+    DATABIND;
 
     public static Set<Api> fromCsv(String str) {
         if (str == null || str.trim().isEmpty()) {

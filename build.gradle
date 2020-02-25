@@ -5,6 +5,7 @@ plugins {
 
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'maven'
 
 group = 'com.github.fabienrenaud'
 version = '6'
@@ -49,7 +50,7 @@ dependencies {
     // FlexJson
     compile group: 'net.sf.flexjson', name: 'flexjson', version: '3.3'
     // FastJson
-    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.62'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.59'
     // json-io
     compile group: 'com.cedarsoftware', name: 'json-io', version: '4.10.0'
     // boon
@@ -108,6 +109,21 @@ test {
         exceptionFormat = 'full'
         showStandardStreams = true
     }
+}
+
+task writeNewPom << {
+    pom {
+        project {
+            inceptionYear '2018'
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("pom.xml")
 }
 
 task (depsize) {
